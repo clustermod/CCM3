@@ -14,6 +14,9 @@ include = [
     "logo_ccm_ca.paa",
     "meta.cpp",
 ]
+exclude = [
+    "addons/*/README.md"
+]
 
 [version]
 git_hash = 0
