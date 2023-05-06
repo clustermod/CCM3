@@ -1,5 +1,3 @@
-#include "server_info.hpp"
-
 class CfgMainMenuSpotlight  {
     class Bootcamp {
         condition = "false";
@@ -69,7 +67,7 @@ class CfgMainMenuSpotlight  {
         text = "Cluster Community Server";
         textIsQuote = 0;
         picture = QPATHTOF(UI\thumbnail_ca.paa);
-        action = JOINACTION(_this,SERVER_IP,SERVER_PORT,SERVER_PASSWORD);
+        action = QUOTE([ARR_4(_this,QUOTE(QUOTE(SERVER_IP)),QUOTE(QUOTE(SERVER_PORT)),QUOTE(QUOTE(SERVER_PASSWORD)))] execVM QUOTE(QPATHTOF(functions\fnc_joinserver.sqf)));
         actionText = "Join server: Cluster Community Server";
         condition = "true";
     };

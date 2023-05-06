@@ -1,6 +1,7 @@
 #include "\A3\Ui_f\hpp\defineResincl.inc"
 
-params [
+params 								
+[
     ["_buttons", []],
     ["_IP", "127.0.0.1"], 
     ["_PORT", "2302"],
@@ -10,6 +11,27 @@ params [
 diag_log "Attempted to join CC Server";
 
 ctrlactivate ((ctrlparent (_buttons # 0)) displayctrl 105);
+
+/*
+1	_IP
+2	_PORT
+3	_PASS
+4	IDC_CANCEL
+5	IDD_MISSION
+6	IDD_DEBRIEFING
+7	IDD_MP_SETUP
+8	IDD_MULTIPLAYER
+9	IDC_MULTI_TAB_DIRECT_CONNECT
+10	IDD_IP_ADDRESS
+11	IDC_IP_ADDRESS
+12	IDC_IP_PORT
+13	IDC_MULTI_SESSIONS
+14	IDC_OK
+15	IDC_MULTI_JOIN
+16	IDD_PASSWORD
+17	IDC_PASSWORD
+18	diag_tickTime + _TIMEOUT
+*/
 
 onEachFrame format [
 "

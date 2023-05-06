@@ -102,10 +102,10 @@ class RscDisplayMain: RscStandardDisplay {
                 };
 
                 class Button: Button {
-                    onButtonClick = JOINACTION(_this,SERVER_IP,SERVER_PORT,SERVER_PASSWORD);
+                    onButtonClick = QUOTE([ARR_4(_this,QUOTE(QUOTE(SERVER_IP)),QUOTE(QUOTE(SERVER_PORT)),QUOTE(QUOTE(SERVER_PASSWORD)))] execVM QUOTE(QPATHTOF(functions\fnc_joinserver.sqf)));
                 };
             };
-
+            onMouseButtonClick = QUOTE([ARR_4(_this,QUOTE(QUOTE(SERVER_IP)),QUOTE(QUOTE(SERVER_PORT)),QUOTE(QUOTE(SERVER_PASSWORD)))] execVM QUOTE(QPATHTOF(functions\fnc_joinserver.sqf)));
         };
 
         class rightSpotlight: RscMainMenuSpotlight {
