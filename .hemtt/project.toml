@@ -35,6 +35,9 @@ workshop = [
     "450814997", # CBA_A3's Workshop ID
     "2369477168", # Advanced Developer Tools Workshop ID
     "2183975396", # S & S Workshop ID
+    "843425103", # RHSAFRF
+    "843577117", # RHSUSAF
+    "843593391", # RHSGREF
 ]
 parameters = [
     "-skipIntro",
